@@ -10,6 +10,7 @@ export default {
   displayName: 'some-test-lib',
   preset: '../../jest.preset.js',
   transform: {
+    'jest-global-setup.ts': 'ts-jest',
     '^.+\\.[tj]s$': ['@swc/jest', swcJestConfig],
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
